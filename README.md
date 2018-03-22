@@ -42,3 +42,5 @@ yarn global add create-hosted-zone
 - [ ] split zone files with combined length of the values in all Value elements of 32,000 bytes.
 - [ ] implement `aws-sdk` to download zone file for a given hosted_zone_id
 - [ ] implement `aws-sdk` to change resource record sets automatically (💥 dangerous)
+- [ ] compare resource records after migration
+- [ ] create target hosted zone if not specified
