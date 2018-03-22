@@ -36,3 +36,9 @@ yarn global add create-hosted-zone
 ❯ create-hosted-zone -o zone_create.txt zone.txt
 ❯ aws --profile <profile> route53 change-resource-record-sets --hosted-zone-id <hosted_zone_id> --change-batch file://zone_create.txt
 ```
+
+## Todo (PRs Welcome!)
+- [ ] split zone files with more than 1000 records into multiple files
+- [ ] split zone files with combined length of the values in all Value elements of 32,000 bytes.
+- [ ] implement `aws-sdk` to download zone file for a given hosted_zone_id
+- [ ] implement `aws-sdk` to change resource record sets automatically (💥 dangerous)
